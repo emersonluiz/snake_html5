@@ -30,9 +30,9 @@
 		<h3>Instrução de Jogo</h3>
 		<p>Para direcionar a cobrinha, utilize as setas do teclado do computador.</p>
 		<p><b>Os seguintes simbolos significam:</b></p>
-		<p><img class="IMGInstruct" src="uva.png" alt="uva" />&nbsp;Esta é a comida da cobrinha.</p>
-		<p><img class="IMGInstruct" src="coins.png" alt="uva" />&nbsp;Cada moeda como esta soma 50 pontos, caso a cobrinha coma.</p>
-		<p><img class="IMGInstruct" src="bomb.png" alt="uva" />&nbsp;Caso a cobrinha coma esta bomba, o jogo será finalizado e será perdido 100 pontos.</p>
+		<p><img class="IMGInstruct" src="img/uva.png" alt="uva" />&nbsp;Esta é a comida da cobrinha.</p>
+		<p><img class="IMGInstruct" src="img/coins.png" alt="uva" />&nbsp;Cada moeda como esta soma 50 pontos, caso a cobrinha coma.</p>
+		<p><img class="IMGInstruct" src="img/bomb.png" alt="uva" />&nbsp;Caso a cobrinha coma esta bomba, o jogo será finalizado e será perdido 100 pontos.</p>
 	</article>
 </div>
 </section>
