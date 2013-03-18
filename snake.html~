@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Snake - O jogo da Cobrinha</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Emerson Luiz">
+	<link rel="stylesheet" type="text/css" href="css/css_snake.css">
+	<link rel="shortcut icon" type="image/gif" href="img/favicon.png">
+</head>
+<body onkeydown="teclas(event)">
+<img id="mySheep" src="img/uva.png" style="display:none;" />
+<img id="mySheep1" src="img/bomb.png" style="display:none;" />
+<img id="mySheep2" src="img/coins.png" style="display:none;" />
+<section>
+<div id="jogo">	
+	<div id="DIVMascara">
+		<div id="DIVTitMascara">Snake</div>
+		<div id="DIVPlay"><img src="img/play1.png" alt="inicio" class="play" onclick="Cobra.init();"/><br><span class="play" onclick="Cobra.init();">Iniciar Jogo</span></div>
+		<div id="DIVGameOver">Final de Jogo<br><span id="SPNFinalPontos">0 pontos conquistados</span></div>
+	</div> 
+	<div id="DIVMaxPontos"><b>Recorde</b><br><span id="SPNMAXPontos">0</span></div>
+	<div id="DIVPontos"><img id="IMGTX" src="img/taxinha.png" alt="painel"/><span id="SPNTitPontos">Pontos</span><div id="SPNPontos">0</div></div>
+	<canvas id="Cenario" width="420" height="420"></canvas>
+</div>
+<div id="sobre">
+	<article>
+		<h1>Snake</h1>
+		<h2>Desenvolvido por Emerson Luiz de Castro</h2>
+		<a href="http:www.emersonluiz.com.br">www.emersonluiz.com.br</a>
+		<h3>Instrução de Jogo</h3>
+		<p>Para direcionar a cobrinha, utilize as setas do teclado do computador.</p>
+		<p><b>Os seguintes simbolos significam:</b></p>
+		<p><img class="IMGInstruct" src="uva.png" alt="uva" />&nbsp;Esta é a comida da cobrinha.</p>
+		<p><img class="IMGInstruct" src="coins.png" alt="uva" />&nbsp;Cada moeda como esta soma 50 pontos, caso a cobrinha coma.</p>
+		<p><img class="IMGInstruct" src="bomb.png" alt="uva" />&nbsp;Caso a cobrinha coma esta bomba, o jogo será finalizado e será perdido 100 pontos.</p>
+	</article>
+</div>
+</section>
+<script type="text/javascript" src="scripts/script_snake.js"></script>
+<script type="text/javascript">	
+	window.onload = Cobra.start();
+</script>
+</body>
+</html>
